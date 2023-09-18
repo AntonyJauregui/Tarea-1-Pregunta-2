@@ -1,0 +1,26 @@
+import { Navbar } from "./Components/Navbar"
+import { Tareas } from "./Components/Tareas";
+export const TaskList = () =>{
+    const TareasRutinarias = [ 
+        { id: 1, Texto: "Tender la cama", Estado: "Realizado",},
+        {id: 2, Texto: "barrer el cuarto", Estado: "Realizado",},
+        { id: 3, Texto: "Bañarse", Estado: "Realizado",},
+        {id: 4, Texto: "Preparar el desayuno", Estado: "Realizado",},
+        {id: 5, Texto: "Alistar las cosas", Estado: "Realizado",},
+        {id: 6, Texto:"Desayunar", Estado: "Realizado",},
+        {id: 7, Texto:"ir al trabajo", Estado: "Pendiente",className:"letra"}];
+
+
+
+    return(
+        <section className="container">
+            <Navbar />
+            {
+            TareasRutinarias.map((Tarea)=>(
+
+                < Tareas {...Tarea}/>
+            ))
+            }
+        </section>
+    )
+}
