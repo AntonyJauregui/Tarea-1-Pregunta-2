@@ -6,8 +6,7 @@
 .container{
     width: 1320px;
     margin: auto;
-}
-.letra{
-    color: blue;
-
+    background-color: #ffffff;
+    border: none;
+    color: rgb(206, 203, 29);
 }

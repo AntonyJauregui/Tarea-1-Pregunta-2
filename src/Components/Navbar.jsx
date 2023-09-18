@@ -2,7 +2,7 @@ export const Navbar = () => {
     return (
         <nav>
             <div>
-                <p>Primera tarea</p>
+                <h1>Tarea 1 Pregunta 2</h1>
             </div>
         </nav>
     )}
